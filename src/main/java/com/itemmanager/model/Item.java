@@ -10,13 +10,15 @@ public class Item {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+    private String name;
+    private String description;
 
-    public String getName() {
-        return name;
+    public Double getPrice() {
+        return price;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setPrice(Double price) {
+        this.price = price;
     }
 
     public Long getId() {
@@ -27,6 +29,14 @@ public class Item {
         this.id = id;
     }
 
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
     public String getDescription() {
         return description;
     }
@@ -35,15 +45,8 @@ public class Item {
         this.description = description;
     }
 
-    public Double getPrice() {
-        return price;
-    }
-
-    public void setPrice(Double price) {
-        this.price = price;
-    }
-
-    private String name;
-    private String description;
     private Double price;
+
+    // Getters and setters
+
 }
