@@ -1,0 +1,55 @@
+/* Container Styles */
+.container {
+    margin-top: 50px; /* Space from the top */
+  }
+  
+  /* Form Styles */
+  .form-group {
+    margin-bottom: 20px; /* Space between form groups */
+  }
+  
+  label {
+    font-weight: bold; /* Bold labels for better visibility */
+    color: #333; /* Dark text for labels */
+  }
+  
+  input[type="text"],
+  input[type="number"] {
+    border: 1px solid #ced4da; /* Light gray border */
+    border-radius: 4px; /* Slightly rounded corners */
+    padding: 10px; /* Padding inside the input */
+    width: 100%; /* Full width */
+    transition: border-color 0.3s; /* Smooth transition for focus */
+  }
+  
+  input:focus {
+    border-color: #007bff; /* Blue border on focus */
+    outline: none; /* Remove default outline */
+  }
+  
+  .btn {
+    width: 100%; /* Full width button */
+    padding: 10px; /* Padding for button */
+    border-radius: 4px; /* Rounded corners for button */
+  }
+  
+  .btn-success {
+    background-color: #28a745; /* Green background for success button */
+    color: white; /* White text color */
+    font-weight: bold; /* Bold text */
+    border: none; /* No border */
+    transition: background-color 0.3s; /* Smooth transition */
+  }
+  
+  .btn-success:hover {
+    background-color: #218838; /* Darker green on hover */
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 576px) {
+    .col-md-6 {
+      width: 100%; /* Full width on small screens */
+      margin: 0; /* Remove margin */
+    }
+  }
+  

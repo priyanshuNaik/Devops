@@ -1,0 +1,59 @@
+/* Container Styles */
+.container {
+    margin-top: 50px; /* Space from the top */
+  }
+  
+  /* Header Styles */
+  h2.text-center {
+    font-weight: bold; /* Bold header for emphasis */
+    color: #333; /* Dark text color */
+    margin-bottom: 30px; /* Space below the header */
+  }
+  
+  /* Form Styles */
+  .form-group {
+    margin-bottom: 20px; /* Space between form groups */
+  }
+  
+  /* Label Styles */
+  label {
+    font-weight: bold; /* Bold labels for clarity */
+    color: #555; /* Darker gray for labels */
+  }
+  
+  /* Input Styles */
+  input.form-control {
+    border: 1px solid #ced4da; /* Light gray border */
+    border-radius: 4px; /* Slightly rounded corners */
+    padding: 10px; /* Padding inside inputs */
+    transition: border-color 0.3s; /* Smooth transition for border color */
+  }
+  
+  /* Input Focus Styles */
+  input.form-control:focus {
+    border-color: #007bff; /* Blue border on focus */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.25); /* Soft blue glow */
+  }
+  
+  /* Button Styles */
+  .btn-success {
+    background-color: #28a745; /* Green background for Update button */
+    color: white; /* White text color */
+    border: none; /* No border */
+    border-radius: 4px; /* Slightly rounded corners */
+    padding: 10px 15px; /* Padding inside the button */
+    transition: background-color 0.3s; /* Smooth transition for background color */
+  }
+  
+  /* Button Hover Styles */
+  .btn-success:hover {
+    background-color: #218838; /* Darker green on hover */
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .container {
+      margin-top: 20px; /* Reduce top margin on smaller screens */
+    }
+  }
+  
