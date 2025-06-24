@@ -12,37 +12,30 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    # 1️⃣ Checkout your code
     - name: Checkout Code
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
 
-    # 2️⃣ Set up Java environment
     - name: Set up JDK 17
-      uses: actions/setup-java@v3
+      uses: actions/setup-java@v4
       with:
         java-version: '17'
         distribution: 'temurin'
 
-    # 3️⃣ Compile your Spring Boot application
     - name: Compile Code
       run: mvn compile
 
-    # 4️⃣ Run security scan using OWASP Dependency Check
     - name: Security Check (OWASP)
       run: mvn org.owasp:dependency-check-maven:check
-      continue-on-error: false  # fail if vulnerabilities found
+      continue-on-error: false
 
-    # 5️⃣ Run Unit Tests
     - name: Run Tests
       run: mvn test
 
-    # 6️⃣ Build the JAR package
     - name: Build (Package JAR)
       run: mvn package
 
-    # 7️⃣ Upload the JAR as artifact
     - name: Upload JAR Artifact
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: springboot-app
         path: target/*.jar
