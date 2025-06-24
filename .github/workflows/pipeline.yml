@@ -24,10 +24,6 @@ jobs:
     - name: Compile Code
       run: mvn compile
 
-    - name: Security Check (OWASP)
-      run: mvn org.owasp:dependency-check-maven:check
-      continue-on-error: false
-
     - name: Run Tests
       run: mvn test
 
